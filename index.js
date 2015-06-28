@@ -19,7 +19,9 @@
 //var co = require('co');
 var app = require('express')();
 var http = require('http').Server(app);
-var easyLogger = require('./lib/easyLogger');
+var easyLogger = require('./lib/easyLogger')({
+    enable: true
+});
 
 easyLogger.warn('###### test logger message!');
 
