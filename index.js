@@ -22,8 +22,11 @@ var http = require('http').Server(app);
 var easyLogger = require('./lib/easyLogger')({
     enable: true
 });
+var anotherNodeFile = require('./anotherNodeFile');
 
 easyLogger.warn('###### test logger message!');
+
+anotherNodeFile.testLogger();
 
 // standard REST routing
 app.get('/', function(req, res){
