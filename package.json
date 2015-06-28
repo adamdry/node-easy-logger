@@ -12,7 +12,8 @@
     "url": "https://github.com/adamdry/node-easy-logger.git"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha"
   },
   "dependencies": {
     "express": "^4.13.0"
