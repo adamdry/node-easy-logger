@@ -21,7 +21,9 @@
     "url": "https://github.com/adamdry/node-easy-logger/issues"
   },
   "main": "./lib/easyLogger.js",
-  "devDependencies": {},
+  "devDependencies": {
+      "mocha": "^2.2.5"
+  },
   "keywords": [
     "logger"
   ],
