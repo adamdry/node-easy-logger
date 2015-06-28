@@ -19,4 +19,16 @@
 //var co = require('co');
 var app = require('express')();
 var http = require('http').Server(app);
+var easyLogger = require('./lib/easyLogger');
 
+easyLogger.setup();
+easyLogger.warn('###### test logger message!');
+
+// standard REST routing
+app.get('/', function(req, res){
+    res.sendFile(__dirname + '/views/testHarness.html');
+});
+
+http.listen(5923, function(){
+  console.log('listening on *:5923');
+});
