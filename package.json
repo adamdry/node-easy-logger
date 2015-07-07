@@ -1,6 +1,6 @@
 {
   "name": "node-easy-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A node.js module with a simple api to log debug/error information to the disk or a database (currently just mysql)",
   "homepage": "http://www.google.com",
   "author": "Adam Dry <adamdryit+github@gmail.com>",
