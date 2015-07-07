@@ -1,6 +1,6 @@
-var easyLogger = require('./lib/easyLogger')();
+var easyLogger = require('./lib/easyLogger').getNewLogger();
 
-console.log('another node file easy logger id: ' + easyLogger.id);
+//console.log('another node file easy logger id: ' + easyLogger.id);
 
 module.exports = {
     testLogger: function() {

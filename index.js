@@ -19,11 +19,11 @@
 //var co = require('co');
 var app = require('express')();
 var http = require('http').Server(app);
-var easyLogger = require('./lib/easyLogger')({
+var easyLogger = require('./lib/easyLogger').getGlobalLogger({
     enable: false
 });
 
-console.log('index easy logger id: ' + easyLogger.id);
+//console.log('index easy logger id: ' + easyLogger.id);
 
 var anotherNodeFile = require('./anotherNodeFile');
 
