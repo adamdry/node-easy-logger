@@ -22,11 +22,14 @@ var http = require('http').Server(app);
 var easyLogger = require('./lib/easyLogger')({
     enable: false
 });
-//var anotherNodeFile = require('./anotherNodeFile');
+
+console.log('index easy logger id: ' + easyLogger.id);
+
+var anotherNodeFile = require('./anotherNodeFile');
 
 easyLogger.warn('###### test logger message!');
 
-//anotherNodeFile.testLogger();
+anotherNodeFile.testLogger();
 
 // standard REST routing
 app.get('/', function(req, res){
