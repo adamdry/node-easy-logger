@@ -12,7 +12,7 @@
     "url": "https://github.com/adamdry/node-easy-logger.git"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "mocha"
   },
   "dependencies": {
